@@ -8,13 +8,11 @@
 
 # Video demonstration
 <div id="video" align="center">
-<video controls>
-  <source src="./public/assets/demonstration.mp4" type="video/mp4">
-  This video can't be run
-</video>
+    <a href="./public/assets/demonstration.mp4">Download video to see result</a>
 </div>
 
 # Used tools
+
 <div id="tools" align="center">
   <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/> 
   <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain.svg" title="CSS3" alt="CSS" width="40" height="40"/> 
