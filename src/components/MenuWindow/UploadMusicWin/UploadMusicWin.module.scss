@@ -1,0 +1,173 @@
+$dark-white-color: #ffffff80;
+$white-color: #fff;
+$error-color: #f62828;
+
+.uploadMenu {
+    position: fixed;
+    z-index: 2000;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    max-width: 495px;
+    width: 30vw;
+
+    background-color: #121212;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    padding: 30px;
+
+    overflow-y: auto;
+
+    .uploadHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            font-size: 23px;
+        }
+
+        button {
+            border: none;
+            background: transparent;
+
+            svg {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .uploadContent {
+        height: 85vh;
+        align-content: center;
+
+        img {
+            width: 150px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        button {
+            margin-top: 50px;
+        }
+
+        .uploadFormContent {
+            .musicImage {
+                margin: 0 auto;
+
+                width: 283px;
+                height: 283px;
+
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                border-radius: 10px;
+
+                @media screen and (max-width: 1240px) {
+                    width: 217px;
+                    height: 217px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 100;
+                color: $dark-white-color;
+                margin-top: 10px;
+
+                span {
+                    color: $white-color;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
+                @media screen and (max-width: 1240px) {
+                    font-size: 13px;
+                }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 17px;
+                margin-top: 10px;
+
+                input,
+                select {
+                    background: #121212;
+                    border: 2px solid #434343;
+                    color: $white-color;
+                    border-radius: 10px;
+                    padding: 13px 0 13px 35px;
+                    outline: none;
+                    
+                    font-size: 16px;
+                    
+                    option{
+                        color: $white-color;
+                    }
+                }
+
+                select * {
+                    color: #121212;
+                }
+
+                label {
+                    font-size: 18px;
+                    text-align: left;
+                }
+
+                button {
+                    margin: 0;
+                }
+
+                .errorMessage {
+                    color: $error-color;
+                }
+
+                .noneError {
+                    opacity: 0;
+
+                    -moz-user-select: none;
+                    -webkit-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                }
+            }
+
+            .paidCheckbox {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                text-align: left;
+
+                label {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .uploadResult {
+        img {
+            margin-bottom: 30p;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        left: 0;
+        top: 100px;
+        right: 0;
+
+        width: auto;
+        max-width: unset;
+
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 10px;
+    }
+}

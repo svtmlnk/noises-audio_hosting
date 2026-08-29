@@ -1,0 +1,102 @@
+$music-item-color: #212121;
+$music-item-hover-color: #3c3c3c;
+$image-background-color: #212121;
+
+.musicItem {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    position: relative;
+
+    padding: 15px;
+    border-radius: 8px;
+
+    background-color: $music-item-color;
+
+    cursor: pointer;
+
+    width: auto;
+
+    user-select: none;
+
+    .musicImage {
+        width: 55px;
+        height: 55px;
+        background-color: $image-background-color;
+
+        border-radius: 8px;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .musicInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: left;
+        width: 65%;
+
+        span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            line-clamp: 1;
+            -webkit-box-orient: vertical;
+
+            &:first-child {
+                font-size: 20px;
+                font-weight: 400;
+            }
+
+            &:last-child {
+                color: #ffffff80;
+                font-size: 14px;
+                font-weight: 100;
+            }
+        }
+    }
+
+    .options{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        right: 15px;
+        gap: 10px;
+        pointer-events: all;
+
+        button{
+            border: none;
+            background: transparent;
+
+            svg{
+                font-size: 30px;
+                color: #6d6d6d;
+            }
+        }
+    }
+
+    &:hover {
+        background-color: $music-item-hover-color;
+    }
+
+    &:has(.options:hover) {
+        background-color: $music-item-color; // Отключаем hover, если курсор над .options
+    }
+
+    @media screen and (max-width: 1280px) {
+        padding: 10px;
+    }
+}
+
+.onList {
+    width: 500px;
+
+    @media screen and (max-width: 1280px) {
+        width: 350px;
+    }
+}

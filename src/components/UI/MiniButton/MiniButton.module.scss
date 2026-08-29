@@ -1,0 +1,23 @@
+.miniButton {
+    background: transparent;
+    border: none;
+
+    &:hover {
+        svg {
+            border-color: #FFFFFF;
+            color: #e2e2e2;
+        }
+    }
+
+    svg {
+        border-radius: 100px;
+        border: 2px solid #848484;
+        padding: 5px;
+        font-size: 30px;
+        color: #adadad;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+$dark-white-color: #ffffff80;
+$main-font-color: #ffffffde;
+$white-color: #fff;
+
+:root {
+  font-family: "Comfortaa", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  color-scheme: light dark;
+  color: $main-font-color;
+  background-color: #090909;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: "Comfortaa", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+input, select {
+  font-family: "Comfortaa", serif;
+}
+
+a {
+  font-weight: 500;
+  color: $main-font-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+}
+
+svg{
+  color: #FBFBFE;
+}

@@ -1,0 +1,60 @@
+$dark-white-color: #ffffff80;
+$white-color: #fff;
+$error-color: #f62828;
+
+.authForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .errorMessage {
+        color: $error-color;
+    }
+
+    .noneError {
+        opacity: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    img {
+        margin-bottom: 14px;
+        width: 102px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+        color: $dark-white-color;
+        margin-top: 10px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        width: 487px;
+        margin-top: 40px;
+
+        input {
+            background: transparent;
+            border: 2px solid #434343;
+            color: $white-color;
+            border-radius: 10px;
+            padding: 13px 0 13px 35px;
+            outline: none;
+
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 85vw;
+        }
+    }
+}

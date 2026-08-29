@@ -1,0 +1,54 @@
+.playerMobile_container {
+    background-color: #000000e6;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 25px;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    cursor: pointer;
+
+    z-index: 2;
+
+    button {
+        background: transparent;
+        border: none;
+
+        .btn_action {
+            font-size: 25px;
+            cursor: pointer;
+            color: #e3e3e3;
+
+            @media screen and (max-width: 1024px) {
+                // font-size: clamp(40px, 10vw, 60px);
+                font-size: 30px;
+            }
+        }
+    }
+
+    .music_info_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+
+        .title {
+            font-size: 18px;
+        }
+
+        .artist {
+            font-size: 13px;
+            color: #ffffff80;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        bottom: 78px;
+    }
+}

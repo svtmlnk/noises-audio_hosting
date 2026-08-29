@@ -1,0 +1,170 @@
+.menu {
+    min-width: 250px;
+    padding: 53px 48px;
+
+    background-color: #121212;
+    z-index: 1;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .menuDesktop {
+        text-align: left;
+        min-width: inherit;
+
+        .logo {
+            width: 150px;
+
+            @media screen and (max-width: 1280px) {
+                display: none;
+            }
+        }
+
+        .miniLogo {
+            display: none;
+
+            @media screen and (max-width: 1280px) and (min-width: 1024px) {
+                display: flex;
+                width: 50px;
+                margin: 0 auto;
+            }
+        }
+
+        .browseMusic {
+            margin-top: 43px;
+
+            ul {
+                text-align: left;
+                list-style-type: none;
+
+                li {
+                    text-align: left;
+                    font-size: 16px;
+                    padding: 0;
+
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                    svg{
+                        color: #727272;
+                    }
+
+                    &:hover {
+                        a {
+                            background-color: #ffffff0d;
+                            color: #fff;
+                        }
+
+                        svg {
+                            fill: #fff;
+                        }
+                    }
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        color: #ffffff80;
+                        border-radius: 8px;
+
+                        gap: 25px;
+                        margin: 0px;
+                        height: 100%;
+                        padding: 16px;
+
+                        svg {
+                            font-size: 30px;
+                        }
+
+                        span {
+                            @media screen and (max-width: 1280px) {
+                                display: none;
+                            }
+                        }
+
+                        @media screen and (max-width: 1280px) {
+                            width: min-content;
+                        }
+                    }
+
+                    @media screen and (max-width: 1280px) {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+
+                &:last-child {
+                    margin-top: 50px;
+                }
+            }
+
+            @media screen and (max-width: 1280px) and (min-width: 1024px) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .browseMusicMobile {
+        display: none;
+
+        button {
+            background: none;
+            border: none;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 27px;
+
+            .userImage {
+                width: 40px;
+                height: 40px;
+                outline: 2px solid #121212;
+                border-radius: 100px;
+
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            svg {
+                font-size: 35px;
+                color: #727272;
+            }
+        }
+    }
+
+    .menuDesktop {
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        width: auto;
+        height: auto;
+        padding: 25px 15px;
+        min-width: unset;
+    }
+
+    @media screen and (max-width: 1024px) {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        width: auto;
+        height: auto;
+
+        padding: 19px;
+    }
+}

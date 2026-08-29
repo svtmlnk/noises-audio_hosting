@@ -1,0 +1,22 @@
+.buttonElem,
+.buttonElem_disabled {
+    border-radius: 100px;
+    color: #080808;
+    padding: 8px 39px;
+    border: none;
+    font-size: 18px;
+}
+
+.buttonElem_disabled {
+    background-color: #d9d9d97e;
+    cursor: not-allowed;
+}
+
+.buttonElem {
+    background-color: #d9d9d9;
+    cursor: pointer;
+
+    &:active {
+        background-color: #b0b0b0;
+    }
+}

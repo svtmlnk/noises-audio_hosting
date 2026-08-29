@@ -1,0 +1,30 @@
+.scrolledPerformersList {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    justify-content: start;
+
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.performersList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    place-items: start;
+    max-width: 100%;
+    gap: 10px;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 15px;
+    }
+}
