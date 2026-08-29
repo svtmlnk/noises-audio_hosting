@@ -26,6 +26,11 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/supabase/supabase-original.svg" title="Supabase" alt="Supabase" width="40" height="40"/>&nbsp;
 </div>
 
+# Design
+<div id="design" align="center">
+    <a href="https://www.figma.com/design/JqkKK9vmXVwhWRm96WNfU4/Noises---audio-hosting?node-id=0-1&t=lhCYfbHvIsv94BtF-1">Design of this app</a>
+</div>
+
 #
 
 <div id="footer" align="center">
